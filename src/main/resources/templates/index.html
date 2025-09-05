@@ -228,9 +228,19 @@
 
         <div class="api-info">
             <h3>API Endpoints</h3>
-            <p>You can also access weather data via REST API:</p>
+            <p>Weather Data:</p>
             <div class="api-endpoint">GET /api/weather?city=London</div>
             <div class="api-endpoint">GET /api/weather/{city}</div>
+            
+            <p style="margin-top: 15px;">Slack Alerts & Monitoring:</p>
+            <div class="api-endpoint">POST /api/alerts/test/{city}</div>
+            <div class="api-endpoint">GET /api/monitoring/status</div>
+            <div class="api-endpoint">POST /api/monitoring/check</div>
+            <div class="api-endpoint">POST /api/alerts/summary</div>
+            
+            <p style="margin-top: 15px; font-size: 0.8rem; color: #636e72;">
+                🔔 <strong>Slack Integration:</strong> Configure webhook URL in application.properties to enable automatic weather alerts for extreme conditions, temperature changes, and daily summaries.
+            </p>
         </div>
     </div>
 </body>
