@@ -1,4 +1,4 @@
-Lopackage com.apad.weather.service;
+package com.apad.weather.service;
 
 import com.apad.weather.model.Weather;
 import org.springframework.stereotype.Service;
